@@ -1,10 +1,11 @@
-const menu = ["Greece", "Turkey", "Roma", "France"];
+const menu = ["Greece", "Turkey", "Rome", "France"];
 const swiper = new Swiper("#wrap", {
   loop: true,
   slidesPerView: "auto",
   centeredSlides: true,
   spaceBetween: 150,
   mousewheel: true,
+  grabCursor: true,
 
   navigation: {
     nextEl: ".swiper-button-next",
