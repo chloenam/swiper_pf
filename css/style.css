@@ -20,7 +20,7 @@ body {
   height: 100vh;
   overflow: hidden;
   position: relative;
-  background-color: #ddd; }
+  background-color: #000; }
   #wrap .bg li {
     width: 100%;
     height: 100%;
@@ -33,7 +33,7 @@ body {
     opacity: 0;
     transition: 1s; }
     #wrap .bg li.on {
-      opacity: 0.6; }
+      opacity: 0.5; }
     #wrap .bg li:nth-of-type(1) {
       background-image: url(../img/greece.jpg); }
     #wrap .bg li:nth-of-type(2) {
@@ -71,6 +71,20 @@ body {
         background-image: url(../img/roma.jpg); }
       #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner {
         background-image: url(../img/france.jpg); }
+  #wrap .swiper-button-prev {
+    bottom: 5vh;
+    right: calc(10vw + 80px);
+    left: auto;
+    top: auto;
+    filter: brightness(5);
+    transform: scale(0.6); }
+  #wrap .swiper-button-next {
+    bottom: 5vh;
+    right: 10vw;
+    left: auto;
+    top: auto;
+    filter: brightness(5);
+    transform: scale(0.6); }
   #wrap .swiper-pagination {
     position: absolute;
     top: 8vh;
