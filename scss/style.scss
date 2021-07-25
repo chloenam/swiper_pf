@@ -1,2 +1,120 @@
 @charset "utf-8";
+
+//font
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+//reset
 @import "reset";
+
+body {
+  font-family: "Libre Baskerville", serif;
+}
+
+#wrap {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-color: #ddd;
+
+  .bg li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    transition: 1s;
+
+    &.on {
+      opacity: 0.6;
+    }
+
+    &:nth-of-type(1) {
+      background-image: url(../img/greece.jpg);
+    }
+    &:nth-of-type(2) {
+      background-image: url(../img/turkey.jpg);
+    }
+    &:nth-of-type(3) {
+      background-image: url(../img/roma.jpg);
+    }
+    &:nth-of-type(4) {
+      background-image: url(../img/france.jpg);
+    }
+  }
+
+  .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+
+    .swiper-slide {
+      width: 60vw;
+      height: 70vh;
+      position: relative;
+      top: 18vh;
+
+      .inner {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.5;
+      }
+
+      &.swiper-slide-active {
+        .inner {
+          opacity: 1;
+        }
+      }
+
+      &[data-swiper-slide-index="0"] .inner {
+        background-image: url(../img/greece.jpg);
+      }
+      &[data-swiper-slide-index="1"] .inner {
+        background-image: url(../img/turkey.jpg);
+      }
+      &[data-swiper-slide-index="2"] .inner {
+        background-image: url(../img/roma.jpg);
+      }
+      &[data-swiper-slide-index="3"] .inner {
+        background-image: url(../img/france.jpg);
+      }
+    }
+  }
+
+  .swiper-pagination {
+    position: absolute;
+    top: 8vh;
+    right: 10vw;
+    left: auto;
+    width: auto;
+    height: 50px;
+
+    span {
+      width: auto;
+      height: auto;
+      background-color: transparent;
+      border-radius: 0;
+      margin-left: 60px;
+      opacity: 0.5;
+      font-size: 20px;
+      font-weight: 400;
+      padding: 5px 10px;
+
+      &.swiper-pagination-bullet-active {
+        opacity: 1;
+        background-color: #fff;
+        font-weight: 700;
+      }
+    }
+  }
+}
