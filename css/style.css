@@ -60,10 +60,6 @@ a {
           left: 0;
           width: 50%;
           height: 100%; }
-          #wrap .swiper-wrapper .swiper-slide .inner .left .content h2 {
-            text-transform: capitalize;
-            font: normal 38px/1 "Prata", serif;
-            margin-bottom: 10px; }
           #wrap .swiper-wrapper .swiper-slide .inner .left .content .btn {
             font-size: 0; }
             #wrap .swiper-wrapper .swiper-slide .inner .left .content .btn a {
@@ -92,6 +88,10 @@ a {
         left: 50%;
         transform: translate(-50%, -35%);
         text-align: center; }
+        #wrap .swiper-wrapper .swiper-slide.about .left .content h2 {
+          text-transform: capitalize;
+          font: normal 38px/1 "Prata", serif;
+          margin-bottom: 10px; }
         #wrap .swiper-wrapper .swiper-slide.about .left .content span {
           text-transform: uppercase;
           font: normal 14px/1 "Poppins", sans-serif;
@@ -136,6 +136,10 @@ a {
         left: 20px;
         width: 90%;
         height: 85%; }
+        #wrap .swiper-wrapper .swiper-slide.about2 .left .content h2 {
+          text-transform: capitalize;
+          font: normal 38px/1 "Prata", serif;
+          margin-bottom: 10px; }
         #wrap .swiper-wrapper .swiper-slide.about2 .left .content span {
           font: normal 14px/1 "Poppins", sans-serif;
           color: #444;
@@ -155,6 +159,51 @@ a {
         width: 100%;
         height: 100%;
         border: 1px solid #000; }
+      #wrap .swiper-wrapper .swiper-slide.news > div .content {
+        position: absolute;
+        width: 100%;
+        height: calc(100% - 40px);
+        top: 40px;
+        padding: 20px; }
+        #wrap .swiper-wrapper .swiper-slide.news > div .content .pic {
+          width: 100%;
+          height: 45vh;
+          border: 1px solid #000;
+          margin-bottom: 20px; }
+        #wrap .swiper-wrapper .swiper-slide.news > div .content .txt {
+          position: relative;
+          width: 100%;
+          height: calc(100% - 45vh - 20px); }
+          #wrap .swiper-wrapper .swiper-slide.news > div .content .txt h2 {
+            text-transform: capitalize;
+            font: normal 30px/1.2 "Prata", serif; }
+            #wrap .swiper-wrapper .swiper-slide.news > div .content .txt h2 span {
+              margin-left: 60px; }
+          #wrap .swiper-wrapper .swiper-slide.news > div .content .txt .num {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font: normal 35px/1 "Poppins", sans-serif; }
+          #wrap .swiper-wrapper .swiper-slide.news > div .content .txt p {
+            font: normal 12px/1.2 "Poppins", sans-serif;
+            color: #444;
+            position: absolute; }
+      #wrap .swiper-wrapper .swiper-slide.news .left .content .txt .sub {
+        width: 45%;
+        bottom: 0;
+        left: 0; }
+      #wrap .swiper-wrapper .swiper-slide.news .left .content .txt .sub2 {
+        width: 35%;
+        top: 90px;
+        right: 0; }
+      #wrap .swiper-wrapper .swiper-slide.news .right .content .txt h2 {
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+      #wrap .swiper-wrapper .swiper-slide.news .right .content .txt .sub {
+        width: 30%;
+        bottom: 0;
+        right: 0; }
 
 @keyframes move {
   0% {
