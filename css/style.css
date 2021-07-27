@@ -38,6 +38,10 @@ a {
         width: 100%;
         height: 100%;
         position: relative; }
+        #wrap .swiper-wrapper .swiper-slide .inner img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
         #wrap .swiper-wrapper .swiper-slide .inner .header {
           padding: 20px;
           display: flex;
@@ -56,28 +60,44 @@ a {
           left: 0;
           width: 50%;
           height: 100%; }
+          #wrap .swiper-wrapper .swiper-slide .inner .left .content h2 {
+            text-transform: capitalize;
+            font: normal 38px/1 "Prata", serif;
+            margin-bottom: 10px; }
+          #wrap .swiper-wrapper .swiper-slide .inner .left .content .btn {
+            font-size: 0; }
+            #wrap .swiper-wrapper .swiper-slide .inner .left .content .btn a {
+              display: inline-block;
+              width: 140px;
+              height: 40px;
+              border: 1px solid #222;
+              font: normal 14px/40px "Poppins", sans-serif;
+              text-transform: uppercase;
+              text-align: center;
+              color: #222;
+              transition: 0.35s; }
+              #wrap .swiper-wrapper .swiper-slide .inner .left .content .btn a:last-child {
+                background-color: #222;
+                color: #fefefe; }
         #wrap .swiper-wrapper .swiper-slide .inner .right {
           position: absolute;
           top: 0;
           right: 0;
           width: 50%;
           height: 100%; }
-      #wrap .swiper-wrapper .swiper-slide.about .left .txt {
+      #wrap .swiper-wrapper .swiper-slide.about .left .content {
         width: 90%;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -35%);
         text-align: center; }
-        #wrap .swiper-wrapper .swiper-slide.about .left .txt h2 {
-          text-transform: capitalize;
-          font: normal 38px/1 "Prata", serif;
-          margin-bottom: 10px; }
-        #wrap .swiper-wrapper .swiper-slide.about .left .txt span {
+        #wrap .swiper-wrapper .swiper-slide.about .left .content span {
           text-transform: uppercase;
           font: normal 14px/1 "Poppins", sans-serif;
-          position: relative; }
-          #wrap .swiper-wrapper .swiper-slide.about .left .txt span::after {
+          position: relative;
+          color: #444; }
+          #wrap .swiper-wrapper .swiper-slide.about .left .content span::after {
             content: "";
             display: block;
             width: 1px;
@@ -87,26 +107,12 @@ a {
             left: 50%;
             transform: skewX(-20deg);
             margin: 10px 0; }
-        #wrap .swiper-wrapper .swiper-slide.about .left .txt p {
+        #wrap .swiper-wrapper .swiper-slide.about .left .content p {
           text-transform: capitalize;
           font: normal 14px/1.4 "Poppins", sans-serif;
           color: #444;
           width: 70%;
           margin: 130px auto 20px; }
-        #wrap .swiper-wrapper .swiper-slide.about .left .txt .btn {
-          font-size: 0; }
-          #wrap .swiper-wrapper .swiper-slide.about .left .txt .btn a {
-            display: inline-block;
-            width: 140px;
-            height: 40px;
-            border: 1px solid #222;
-            font: normal 14px/40px "Poppins", sans-serif;
-            text-transform: uppercase;
-            color: #222;
-            transition: 0.35s; }
-            #wrap .swiper-wrapper .swiper-slide.about .left .txt .btn a:last-child {
-              background-color: #222;
-              color: #fefefe; }
       #wrap .swiper-wrapper .swiper-slide.about .right .pic {
         position: absolute;
         bottom: 0;
@@ -114,9 +120,6 @@ a {
         width: 100%;
         height: 85%; }
         #wrap .swiper-wrapper .swiper-slide.about .right .pic img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
           filter: saturate(50%); }
         #wrap .swiper-wrapper .swiper-slide.about .right .pic h3 {
           position: absolute;
@@ -127,6 +130,31 @@ a {
           font: normal 50px/1.2 "Prata", serif;
           color: #eee;
           width: 100%; }
+      #wrap .swiper-wrapper .swiper-slide.about2 .left .content {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        width: 90%;
+        height: 85%; }
+        #wrap .swiper-wrapper .swiper-slide.about2 .left .content span {
+          font: normal 14px/1 "Poppins", sans-serif;
+          color: #444;
+          text-transform: uppercase; }
+        #wrap .swiper-wrapper .swiper-slide.about2 .left .content .pic {
+          width: 50%;
+          height: 33vh;
+          border: 1px solid #000;
+          margin: 2% 0 5%; }
+        #wrap .swiper-wrapper .swiper-slide.about2 .left .content p {
+          font: normal 30px/1.4 "Prata", serif;
+          color: #444; }
+        #wrap .swiper-wrapper .swiper-slide.about2 .left .content .btn {
+          position: absolute;
+          bottom: 0; }
+      #wrap .swiper-wrapper .swiper-slide.about2 .right .pic {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #000; }
 
 @keyframes move {
   0% {
