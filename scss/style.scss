@@ -15,16 +15,157 @@
   position: relative;
   background-color: #f8f2e9;
 
+  h1 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+
+    a {
+      color: $dark_black;
+      font: normal italic 30px/1 $font_serif;
+    }
+  }
+
   .swiper-wrapper {
     width: 100%;
     height: 100%;
 
     .swiper-slide {
-      width: 60vw;
-      height: 70vh;
-      top: 15vh;
+      width: 65vw;
+      height: 78vh;
+      top: 13vh;
       background-color: #dedcd1;
+
       .inner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        .header {
+          padding: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          h2 {
+            font: normal 14px/1 $font_san;
+          }
+
+          .icon {
+            font: normal 14px/1 $font_san;
+            color: $dark_black;
+
+            span {
+              margin-right: 20px;
+            }
+          }
+        }
+
+        .left {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 50%;
+          height: 100%;
+        }
+
+        .right {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 50%;
+          height: 100%;
+        }
+      }
+
+      &.about {
+        .left {
+          .txt {
+            width: 90%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -35%);
+            text-align: center;
+            h2 {
+              text-transform: capitalize;
+              font: normal 38px/1 $font_serif;
+              margin-bottom: 10px;
+            }
+
+            span {
+              text-transform: uppercase;
+              font: normal 14px/1 $font_san;
+              position: relative;
+
+              &::after {
+                content: "";
+                display: block;
+                width: 1px;
+                height: 100px;
+                background-color: $dark_black;
+                position: absolute;
+                left: 50%;
+                transform: skewX(-20deg);
+                margin: 10px 0;
+              }
+            }
+
+            p {
+              text-transform: capitalize;
+              font: normal 14px/1.4 $font_san;
+              color: $light_black;
+              width: 70%;
+              margin: 130px auto 20px;
+            }
+
+            .btn {
+              font-size: 0;
+              a {
+                display: inline-block;
+                width: 140px;
+                height: 40px;
+                border: 1px solid $dark_black;
+                font: normal 14px/40px $font_san;
+                text-transform: uppercase;
+                color: $dark_black;
+                transition: 0.35s;
+
+                &:last-child {
+                  background-color: $dark_black;
+                  color: $white;
+                }
+              }
+            }
+          }
+        }
+
+        .right {
+          .pic {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 85%;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              filter: saturate(50%);
+            }
+            h3 {
+              position: absolute;
+              bottom: 50px;
+              left: 50%;
+              text-align: center;
+              transform: translateX(-50%);
+              font: normal 50px/1.2 $font_serif;
+              color: #eee;
+              width: 100%;
+            }
+          }
+        }
       }
     }
   }

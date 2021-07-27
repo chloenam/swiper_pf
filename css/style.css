@@ -19,14 +19,114 @@ a {
   overflow: hidden;
   position: relative;
   background-color: #f8f2e9; }
+  #wrap h1 {
+    position: absolute;
+    top: 30px;
+    left: 30px; }
+    #wrap h1 a {
+      color: #222;
+      font: normal italic 30px/1 "Prata", serif; }
   #wrap .swiper-wrapper {
     width: 100%;
     height: 100%; }
     #wrap .swiper-wrapper .swiper-slide {
-      width: 60vw;
-      height: 70vh;
-      top: 15vh;
+      width: 65vw;
+      height: 78vh;
+      top: 13vh;
       background-color: #dedcd1; }
+      #wrap .swiper-wrapper .swiper-slide .inner {
+        width: 100%;
+        height: 100%;
+        position: relative; }
+        #wrap .swiper-wrapper .swiper-slide .inner .header {
+          padding: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          #wrap .swiper-wrapper .swiper-slide .inner .header h2 {
+            font: normal 14px/1 "Poppins", sans-serif; }
+          #wrap .swiper-wrapper .swiper-slide .inner .header .icon {
+            font: normal 14px/1 "Poppins", sans-serif;
+            color: #222; }
+            #wrap .swiper-wrapper .swiper-slide .inner .header .icon span {
+              margin-right: 20px; }
+        #wrap .swiper-wrapper .swiper-slide .inner .left {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 50%;
+          height: 100%; }
+        #wrap .swiper-wrapper .swiper-slide .inner .right {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 50%;
+          height: 100%; }
+      #wrap .swiper-wrapper .swiper-slide.about .left .txt {
+        width: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -35%);
+        text-align: center; }
+        #wrap .swiper-wrapper .swiper-slide.about .left .txt h2 {
+          text-transform: capitalize;
+          font: normal 38px/1 "Prata", serif;
+          margin-bottom: 10px; }
+        #wrap .swiper-wrapper .swiper-slide.about .left .txt span {
+          text-transform: uppercase;
+          font: normal 14px/1 "Poppins", sans-serif;
+          position: relative; }
+          #wrap .swiper-wrapper .swiper-slide.about .left .txt span::after {
+            content: "";
+            display: block;
+            width: 1px;
+            height: 100px;
+            background-color: #222;
+            position: absolute;
+            left: 50%;
+            transform: skewX(-20deg);
+            margin: 10px 0; }
+        #wrap .swiper-wrapper .swiper-slide.about .left .txt p {
+          text-transform: capitalize;
+          font: normal 14px/1.4 "Poppins", sans-serif;
+          color: #444;
+          width: 70%;
+          margin: 130px auto 20px; }
+        #wrap .swiper-wrapper .swiper-slide.about .left .txt .btn {
+          font-size: 0; }
+          #wrap .swiper-wrapper .swiper-slide.about .left .txt .btn a {
+            display: inline-block;
+            width: 140px;
+            height: 40px;
+            border: 1px solid #222;
+            font: normal 14px/40px "Poppins", sans-serif;
+            text-transform: uppercase;
+            color: #222;
+            transition: 0.35s; }
+            #wrap .swiper-wrapper .swiper-slide.about .left .txt .btn a:last-child {
+              background-color: #222;
+              color: #fefefe; }
+      #wrap .swiper-wrapper .swiper-slide.about .right .pic {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 85%; }
+        #wrap .swiper-wrapper .swiper-slide.about .right .pic img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          filter: saturate(50%); }
+        #wrap .swiper-wrapper .swiper-slide.about .right .pic h3 {
+          position: absolute;
+          bottom: 50px;
+          left: 50%;
+          text-align: center;
+          transform: translateX(-50%);
+          font: normal 50px/1.2 "Prata", serif;
+          color: #eee;
+          width: 100%; }
 
 @keyframes move {
   0% {
