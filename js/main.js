@@ -1,4 +1,4 @@
-const menu = ["Greece", "Turkey", "Rome", "France"];
+const menu = ["", "", "", ""];
 const swiper = new Swiper("#wrap", {
   loop: true,
   slidesPerView: "auto",

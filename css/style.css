@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,174 +13,20 @@ li {
 a {
   text-decoration: none; }
 
-body {
-  font-family: "Libre Baskerville", serif; }
-
 #wrap {
   width: 100%;
   height: 100vh;
   overflow: hidden;
   position: relative;
-  background-color: #000; }
-  #wrap .bg li {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    opacity: 0;
-    transition: 1s; }
-    #wrap .bg li.on {
-      opacity: 0.5; }
-    #wrap .bg li:nth-of-type(1) {
-      background-image: url(../img/greece.jpg); }
-    #wrap .bg li:nth-of-type(2) {
-      background-image: url(../img/turkey.jpg); }
-    #wrap .bg li:nth-of-type(3) {
-      background-image: url(../img/rome.jpg); }
-    #wrap .bg li:nth-of-type(4) {
-      background-image: url(../img/france.jpg); }
+  background-color: #f8f2e9; }
   #wrap .swiper-wrapper {
     width: 100%;
     height: 100%; }
     #wrap .swiper-wrapper .swiper-slide {
       width: 60vw;
       height: 70vh;
-      position: relative;
-      top: 20vh; }
-      #wrap .swiper-wrapper .swiper-slide .inner {
-        width: 100%;
-        height: 100%;
-        border-radius: 20px;
-        background-color: #fff;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0.5;
-        overflow: hidden; }
-        #wrap .swiper-wrapper .swiper-slide .inner .pannel {
-          position: relative;
-          top: 0;
-          left: -100%;
-          width: 50%;
-          height: 100%;
-          background-color: rgba(119, 119, 119, 0.2);
-          backdrop-filter: blur(12px);
-          padding: 20px 40px;
-          transition: 0.5s;
-          transition-delay: 0.5s;
-          overflow: hidden; }
-          #wrap .swiper-wrapper .swiper-slide .inner .pannel .txt {
-            margin-top: 30px;
-            margin-left: -100%; }
-            #wrap .swiper-wrapper .swiper-slide .inner .pannel .txt h2 {
-              font-size: 90px;
-              color: white;
-              margin-bottom: 20px;
-              margin-left: -150%;
-              transition: 0.5s;
-              transition-delay: 1s; }
-            #wrap .swiper-wrapper .swiper-slide .inner .pannel .txt p {
-              width: 200px;
-              font-size: 12px;
-              line-height: 1.6;
-              margin-bottom: 40px;
-              margin-left: -100%;
-              color: #dcdcdc;
-              transition: 0.5s;
-              transition-delay: 1.5s; }
-            #wrap .swiper-wrapper .swiper-slide .inner .pannel .txt > a {
-              font-size: 14px;
-              color: #e7e7e7;
-              text-align: center;
-              margin-left: -100%;
-              transition: 0.5s;
-              transition-delay: 2s;
-              text-transform: uppercase; }
-              #wrap .swiper-wrapper .swiper-slide .inner .pannel .txt > a::before {
-                content: "";
-                display: inline-block;
-                width: 10px;
-                height: 10px;
-                background-color: #e7e7e7;
-                border-radius: 10px;
-                margin-right: 10px; }
-          #wrap .swiper-wrapper .swiper-slide .inner .pannel .icon {
-            position: absolute;
-            bottom: 40px;
-            right: 40px;
-            margin-right: -100%;
-            transition: 0.5s;
-            transition-delay: 3s; }
-            #wrap .swiper-wrapper .swiper-slide .inner .pannel .icon a {
-              margin-left: 20px;
-              font-size: 18px;
-              color: #bbb;
-              transition: 0.5s; }
-              #wrap .swiper-wrapper .swiper-slide .inner .pannel .icon a:hover {
-                color: #fff; }
-      #wrap .swiper-wrapper .swiper-slide.swiper-slide-active .inner {
-        opacity: 1; }
-        #wrap .swiper-wrapper .swiper-slide.swiper-slide-active .inner .pannel {
-          left: 0; }
-          #wrap .swiper-wrapper .swiper-slide.swiper-slide-active .inner .pannel .txt {
-            margin-left: 0; }
-            #wrap .swiper-wrapper .swiper-slide.swiper-slide-active .inner .pannel .txt h2 {
-              margin-left: 0; }
-            #wrap .swiper-wrapper .swiper-slide.swiper-slide-active .inner .pannel .txt p {
-              margin-left: 10px; }
-            #wrap .swiper-wrapper .swiper-slide.swiper-slide-active .inner .pannel .txt a {
-              margin-left: 10px; }
-              #wrap .swiper-wrapper .swiper-slide.swiper-slide-active .inner .pannel .txt a:before {
-                animation: move linear 0.5s 2.9s forwards; }
-          #wrap .swiper-wrapper .swiper-slide.swiper-slide-active .inner .pannel .icon {
-            margin-right: 0; }
-      #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner {
-        background-image: url(../img/greece.jpg); }
-      #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .inner {
-        background-image: url(../img/turkey.jpg); }
-      #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .inner {
-        background-image: url(../img/rome.jpg); }
-      #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="3"] .inner {
-        background-image: url(../img/france.jpg); }
-  #wrap .swiper-button-prev {
-    top: 55%;
-    left: 15vw;
-    filter: brightness(5);
-    transform: scale(0.6); }
-  #wrap .swiper-button-next {
-    top: 55%;
-    right: 15vw;
-    filter: brightness(5);
-    transform: scale(0.6); }
-  #wrap .swiper-pagination {
-    position: absolute;
-    top: 8vh;
-    right: 0;
-    left: auto;
-    width: 50vw;
-    height: 50px;
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: left;
-    padding-left: 80px; }
-    #wrap .swiper-pagination span {
-      width: auto;
-      height: auto;
-      background-color: transparent;
-      border-radius: 0;
-      margin: 0 20px;
-      opacity: 0.5;
-      font-size: 16px;
-      line-height: 50px; }
-      #wrap .swiper-pagination span.swiper-pagination-bullet-active {
-        opacity: 1;
-        font-weight: 700; }
+      top: 15vh;
+      background-color: #dedcd1; }
 
 @keyframes move {
   0% {
