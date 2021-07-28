@@ -34,7 +34,6 @@
       width: 65vw;
       height: 78vh;
       top: 13vh;
-
       background-color: #dedcd1;
 
       // &.swiper-slide-active {
@@ -42,6 +41,7 @@
       //   height: 100vh;
       //   top: 0;
       // }
+
       .inner {
         width: 100%;
         height: 100%;
@@ -51,6 +51,7 @@
           width: 100%;
           height: 100%;
           object-fit: cover;
+          filter: saturate(50%);
         }
 
         .header {
@@ -61,6 +62,7 @@
 
           h2 {
             font: normal 14px/1 $font_san;
+            color: $dark_black;
           }
 
           .icon {
@@ -167,10 +169,6 @@
             width: 100%;
             height: 85%;
 
-            img {
-              filter: saturate(50%);
-            }
-
             h3 {
               position: absolute;
               bottom: 50px;
@@ -210,7 +208,6 @@
             .pic {
               width: 50%;
               height: 33vh;
-              border: 1px solid #000;
               margin: 2% 0 5%;
             }
 
@@ -230,7 +227,6 @@
           .pic {
             width: 100%;
             height: 100%;
-            border: 1px solid #000;
           }
         }
       }
@@ -247,7 +243,6 @@
             .pic {
               width: 100%;
               height: 45vh;
-              border: 1px solid #000;
               margin-bottom: 20px;
             }
 
@@ -322,13 +317,13 @@
 
       &.reference {
         .left {
+          background: url(../img/reference.jpg) no-repeat center/cover;
           .content {
             width: 100%;
             height: 100%;
             position: absolute;
             top: 0;
             left: 0;
-            border: 1px solid #000;
 
             h2 {
               position: absolute;
