@@ -47,7 +47,9 @@ a {
           padding: 20px;
           display: flex;
           justify-content: space-between;
-          align-items: center; }
+          align-items: center;
+          position: relative;
+          z-index: 2; }
           #wrap .swiper-wrapper .swiper-slide .inner .header h2 {
             font: normal 14px/1 "Poppins", sans-serif;
             color: #222; }

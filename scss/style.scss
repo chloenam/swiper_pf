@@ -59,6 +59,8 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
+          position: relative;
+          z-index: 2;
 
           h2 {
             font: normal 14px/1 $font_san;
