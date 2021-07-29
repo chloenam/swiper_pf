@@ -58,6 +58,8 @@ a {
             color: #222; }
             #wrap .swiper-wrapper .swiper-slide .inner .header .icon span {
               margin-right: 20px; }
+            #wrap .swiper-wrapper .swiper-slide .inner .header .icon a {
+              color: #222; }
         #wrap .swiper-wrapper .swiper-slide .inner .left {
           position: absolute;
           top: 0;
