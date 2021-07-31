@@ -13,16 +13,43 @@
   height: 100vh;
   overflow: hidden;
   position: relative;
-  background-color: #f8f2e9;
+  background-color: #dedcd1;
 
-  h1 {
-    position: absolute;
-    top: 30px;
-    left: 30px;
+  .header {
+    width: 100%;
+    position: relative;
+    z-index: 2;
 
-    a {
+    h1 {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+
+      a {
+        color: $dark_black;
+        font: normal italic 30px/1 $font_serif;
+
+        span {
+          font: normal 14px/1 $font_san;
+          color: $dark_black;
+        }
+      }
+    }
+
+    .icon {
+      position: absolute;
+      right: 30px;
+      top: 40px;
+      font: normal 14px/1 $font_san;
       color: $dark_black;
-      font: normal italic 30px/1 $font_serif;
+
+      span {
+        margin-right: 50px;
+      }
+
+      a {
+        color: $dark_black;
+      }
     }
   }
 
@@ -31,16 +58,16 @@
     height: 100%;
 
     .swiper-slide {
-      width: 65vw;
-      height: 78vh;
-      top: 13vh;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
       background-color: #dedcd1;
+      opacity: 0;
+      transition: 0.5s;
 
-      // &.swiper-slide-active {
-      //   width: 100vw;
-      //   height: 100vh;
-      //   top: 0;
-      // }
+      &.swiper-slide-active {
+        opacity: 1;
+      }
 
       .inner {
         width: 100%;
@@ -52,33 +79,6 @@
           height: 100%;
           object-fit: cover;
           filter: saturate(50%);
-        }
-
-        .header {
-          padding: 20px;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          position: relative;
-          z-index: 2;
-
-          h2 {
-            font: normal 14px/1 $font_san;
-            color: $dark_black;
-          }
-
-          .icon {
-            font: normal 14px/1 $font_san;
-            color: $dark_black;
-
-            span {
-              margin-right: 20px;
-            }
-
-            a {
-              color: $dark_black;
-            }
-          }
         }
 
         .left {
@@ -194,8 +194,8 @@
           .content {
             position: absolute;
             bottom: 20px;
-            left: 20px;
-            width: 90%;
+            left: 30px;
+            width: 100%;
             height: 85%;
 
             h2 {
@@ -213,8 +213,8 @@
 
             .pic {
               width: 50%;
-              height: 33vh;
-              margin: 2% 0 5%;
+              height: 38vh;
+              margin: 20px 0;
             }
 
             p {
@@ -243,19 +243,20 @@
             position: absolute;
             width: 100%;
             height: calc(100% - 40px);
-            top: 40px;
+            top: 10vh;
             padding: 20px;
 
             .pic {
               width: 100%;
-              height: 45vh;
+              height: 50vh;
               margin-bottom: 20px;
             }
 
             .txt {
               position: relative;
               width: 100%;
-              height: calc(100% - 45vh - 20px);
+              height: calc(100% - 60vh - 20px);
+              bottom: 0;
 
               h2 {
                 text-transform: capitalize;
@@ -374,7 +375,7 @@
             width: 100%;
             height: 100%;
             position: absolute;
-            top: 0;
+            top: 5vh;
             right: 0;
 
             h2 {
@@ -405,7 +406,8 @@
               }
 
               &.sub3 {
-                top: 90%;
+                top: auto;
+                bottom: 10vh;
               }
             }
           }
@@ -415,14 +417,16 @@
   }
 
   .swiper-button-prev {
-    left: 13%;
-    transform: scale(0.8);
+    top: 8vh;
+    left: 70vw;
+    transform: scale(0.5);
     filter: grayscale(1);
   }
 
   .swiper-button-next {
-    right: 13%;
-    transform: scale(0.8);
+    top: 8vh;
+    right: 25vw;
+    transform: scale(0.5);
     filter: grayscale(1);
   }
 

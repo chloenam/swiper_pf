@@ -6,6 +6,7 @@ const swiper = new Swiper("#wrap", {
   spaceBetween: 150,
   mousewheel: true,
   grabCursor: true,
+  speed: 800,
 
   navigation: {
     nextEl: ".swiper-button-next",
