@@ -10,13 +10,15 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <script src="https://kit.fontawesome.com/59467ea45a.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
   <script defer src="js/main.js"></script>
 </head>
 
 <body>
   <section id="wrap">
     <div class="header">
-      <h1><a href="#">New <span>start</span></a></h1>
+      <h1><a href="index.html">New <span>start</span></a></h1>
       <div class="icon">
         <span>shop</span>
         <a href="#"><i class="fas fa-search"></i></a>
@@ -27,19 +29,19 @@
         <div class="inner">
           <div class="left">
             <div class="content">
-              <h2>the way down</h2>
-              <span>into a wider world</span>
-              <p>it started with a feeling : a late summer dream, on unknown oasis</p>
+              <h2 class="downUp">the way down</h2>
+              <span class="downUp">into a wider world</span>
+              <p class="downUp">it started with a feeling : a late summer dream, on unknown oasis</p>
               <div class="btn">
-                <a href="#">more about</a>
-                <a href="#">click shop</a>
+                <a href="#" class="leftR">more about</a>
+                <a href="#" class="rightL">click shop</a>
               </div>
             </div>
           </div>
           <div class="right">
-            <div class="pic">
-              <img src="img/plunge.jpg" alt="field">
-              <h3>Take<br> the <em>plunge</em></h3>
+            <div class="pic picM">
+              <img src="img/plunge.jpg" alt="field" />
+              <h3 class="picT">Take<br> the <em>plunge</em></h3>
             </div>
           </div>
         </div>
@@ -48,20 +50,20 @@
         <div class="inner">
           <div class="left">
             <div class="content">
-              <h2>lost horizons</h2>
-              <span>screen</span>
-              <div class="pic">
+              <h2 class="downUp">lost horizons</h2>
+              <span class="downUp">screen</span>
+              <div class="pic downUp">
                 <img src="img/about_short.jpg" alt="thumb">
               </div>
-              <p>Depart from the day,<br> drift into <em>paradise</em></p>
+              <p class="downUp">Depart from the day,<br> drift into <em>paradise</em></p>
               <div class="btn">
-                <a href="#">more about</a>
-                <a href="#">click shop</a>
+                <a href="#" class="leftR">more about</a>
+                <a href="#" class="rightL">click shop</a>
               </div>
             </div>
           </div>
           <div class="right">
-            <div class="pic">
+            <div class="pic picM">
               <img src="img/about_full.jpg" alt="fullbg">
             </div>
           </div>
@@ -71,26 +73,26 @@
         <div class="inner">
           <div class="left">
             <div class="content">
-              <div class="pic">
+              <div class="pic picD">
                 <img src="img/news1.jpg" alt="news1">
               </div>
               <div class="txt">
-                <h2>News with a <br><span>new beginning</span></h2>
-                <span class="num">21</span>
-                <p class="sub">Quis voluptas quidem explicabo, nihil eligendi. </p>
-                <p class="sub2">Obcaecati recusandae sequi?</p>
+                <h2 class="leftR">News with a <br><span>new beginning</span></h2>
+                <span class="num rightL">21</span>
+                <p class="sub picT">Quis voluptas quidem explicabo, nihil eligendi. </p>
+                <p class="sub2 picT">Obcaecati recusandae sequi?</p>
               </div>
             </div>
           </div>
           <div class="right">
             <div class="content">
-              <div class="pic">
+              <div class="pic picD">
                 <img src="img/news2.jpg" alt="news2">
               </div>
               <div class="txt">
-                <h2>everything around</h2>
-                <span class="num">22</span>
-                <p class="sub">magni, molestias quaerat placeat. </p>
+                <h2 class="leftR">everything around</h2>
+                <span class="num rightL">22</span>
+                <p class="sub picT">magni, molestias quaerat placeat. </p>
               </div>
             </div>
           </div>
@@ -100,29 +102,32 @@
         <div class="inner">
           <div class="left">
             <div class="content">
-              <h2>
+              <h2 class="upDown">
                 and what's <br> <em>surprising</em> about <br>these images,no,<br>what's honest
               </h2>
-              <div class="whiteB">
-                <h3>image by<br> unsplash</h3>
-                <span>art</span>
-                <p>tenetur eius quisquam dolores adipisci tempore voluptatum accusamus atque porro magni, nisi, minima
+              <div class="whiteB upDown">
+                <h3 class="downUp">image by<br> unsplash</h3>
+                <span class="downUp">art</span>
+                <p class="downUp">tenetur eius quisquam dolores adipisci tempore voluptatum accusamus atque porro magni,
+                  nisi, minima
                   ipsa! Odio quis architecto corrupti nisi mollitia sunt iusto.</p>
               </div>
             </div>
           </div>
           <div class="right">
             <div class="content">
-              <h2>load by the create:<br> by unsplash</h2>
+              <h2 class="upDown">load by the create:<br> by unsplash</h2>
 
-              <p class="sub">vero harum ipsum unde numquam est voluptatum illo reprehenderit magni maiores repudiandae
+              <p class="sub downUp">vero harum ipsum unde numquam est voluptatum illo reprehenderit magni maiores
+                repudiandae
                 fugiat rerum?
               </p>
-              <p class="sub2">Deserunt dolor odio, libero fugiat eaque esse officia adipisci eius fuga iure praesentium
+              <p class="sub2 downUp">Deserunt dolor odio, libero fugiat eaque esse officia adipisci eius fuga iure
+                praesentium
                 eveniet
                 consequatur temporibus officiis iusto doloremque ipsam id ad laudantium voluptatibus deleniti possimus.
               </p>
-              <p class="sub3">
+              <p class="sub3 downUp">
                 Made with reference to the design.
               </p>
             </div>
