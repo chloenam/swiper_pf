@@ -51,8 +51,7 @@ a {
       height: 100vh;
       top: 0;
       background-color: #dedcd1;
-      opacity: 0;
-      transition: 0.5s; }
+      opacity: 0; }
       #wrap .swiper-wrapper .swiper-slide.swiper-slide-active {
         opacity: 1; }
       #wrap .swiper-wrapper .swiper-slide .inner {
@@ -80,8 +79,7 @@ a {
               font: normal 14px/40px "Poppins", sans-serif;
               text-transform: uppercase;
               text-align: center;
-              color: #222;
-              transition: 0.35s; }
+              color: #222; }
               #wrap .swiper-wrapper .swiper-slide .inner .left .content .btn a:last-child {
                 background-color: #222;
                 color: #fefefe; }
@@ -94,9 +92,7 @@ a {
       #wrap .swiper-wrapper .swiper-slide.about .left .content {
         width: 90%;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -35%);
+        top: 40%;
         text-align: center; }
         #wrap .swiper-wrapper .swiper-slide.about .left .content h2 {
           text-transform: capitalize;
@@ -112,12 +108,13 @@ a {
             content: "";
             display: block;
             width: 1px;
-            height: 100px;
+            height: 0;
             background-color: #222;
             position: absolute;
             left: 50%;
             transform: skewX(-20deg);
-            margin: 10px 0; }
+            margin: 10px 0;
+            animation: drawLine 0.5s linear 0.6s forwards; }
         #wrap .swiper-wrapper .swiper-slide.about .left .content p {
           text-transform: capitalize;
           font: normal 14px/1.4 "Poppins", sans-serif;
@@ -132,10 +129,8 @@ a {
         height: 85%; }
         #wrap .swiper-wrapper .swiper-slide.about .right .pic h3 {
           position: absolute;
-          bottom: 50px;
-          left: 50%;
+          top: 70%;
           text-align: center;
-          transform: translateX(-50%);
           font: normal 50px/1.2 "Prata", serif;
           color: #eee;
           width: 100%; }
@@ -225,7 +220,7 @@ a {
           left: 0; }
           #wrap .swiper-wrapper .swiper-slide.reference .left .content h2 {
             position: absolute;
-            top: 10%;
+            top: 12%;
             left: 50%;
             transform: translateX(-50%);
             text-align: center;
@@ -272,8 +267,7 @@ a {
         #wrap .swiper-wrapper .swiper-slide.reference .right .content p {
           position: absolute;
           top: 35%;
-          left: 50%;
-          transform: translateX(-50%);
+          left: 30%;
           width: 45%;
           text-align: center;
           text-transform: capitalize;
@@ -314,5 +308,10 @@ a {
     width: 10px; }
   100% {
     width: 50%; } }
+@keyframes drawLine {
+  0% {
+    height: 0; }
+  100% {
+    height: 100px; } }
 
 /*# sourceMappingURL=style.css.map */
