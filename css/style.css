@@ -114,7 +114,7 @@ a {
             left: 50%;
             transform: skewX(-20deg);
             margin: 10px 0;
-            animation: drawLine 0.5s linear 0.6s forwards; }
+            animation: drawLine 0.5s linear 0.8s forwards; }
         #wrap .swiper-wrapper .swiper-slide.about .left .content p {
           text-transform: capitalize;
           font: normal 14px/1.4 "Poppins", sans-serif;
@@ -134,32 +134,32 @@ a {
           font: normal 50px/1.2 "Prata", serif;
           color: #eee;
           width: 100%; }
-      #wrap .swiper-wrapper .swiper-slide.about2 .left .content {
+      #wrap .swiper-wrapper .swiper-slide.brand .left .content {
         position: absolute;
         bottom: 20px;
         left: 30px;
         width: 100%;
         height: 85%; }
-        #wrap .swiper-wrapper .swiper-slide.about2 .left .content h2 {
+        #wrap .swiper-wrapper .swiper-slide.brand .left .content h2 {
           text-transform: capitalize;
           font: normal 38px/1 "Prata", serif;
           margin-bottom: 10px;
           color: #222; }
-        #wrap .swiper-wrapper .swiper-slide.about2 .left .content span {
+        #wrap .swiper-wrapper .swiper-slide.brand .left .content span {
           font: normal 14px/1 "Poppins", sans-serif;
           color: #444;
           text-transform: uppercase; }
-        #wrap .swiper-wrapper .swiper-slide.about2 .left .content .pic {
+        #wrap .swiper-wrapper .swiper-slide.brand .left .content .pic {
           width: 50%;
           height: 38vh;
           margin: 20px 0; }
-        #wrap .swiper-wrapper .swiper-slide.about2 .left .content p {
+        #wrap .swiper-wrapper .swiper-slide.brand .left .content p {
           font: normal 30px/1.4 "Prata", serif;
           color: #444; }
-        #wrap .swiper-wrapper .swiper-slide.about2 .left .content .btn {
+        #wrap .swiper-wrapper .swiper-slide.brand .left .content .btn {
           position: absolute;
           bottom: 0; }
-      #wrap .swiper-wrapper .swiper-slide.about2 .right .pic {
+      #wrap .swiper-wrapper .swiper-slide.brand .right .pic {
         width: 100%;
         height: 100%; }
       #wrap .swiper-wrapper .swiper-slide.news > div .content {
